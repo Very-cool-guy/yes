@@ -10,9 +10,14 @@ hello_world/.*
 hello_world/src/hello_world/__pycache__/
 hello_world/src/hello_world.egg-info/
 
-lisp/cloj/clojure-noob/**/*
-!lisp/cloj/clojure-noob/.lein-repl-history
-!lisp/cloj/clojure-noob/src/clojure-noob/*
+lisp/cloj/clojure-noob/.*
+lisp/cloj/clojure-noob/doc/
+lisp/cloj/clojure-noob/resources/
+lisp/cloj/clojure-noob/target/
+lisp/cloj/clojure-noob/test/
+lisp/cloj/clojure-noob/LICENSE
+lisp/cloj/clojure-noob/project.clj
+lisp/cloj/clojure-noob/*.md
 
 texts/
 
