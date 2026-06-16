@@ -1,0 +1,26 @@
+def recur_factorial(n, acc=1):
+    match n:
+        case 0:
+            return acc
+        case int() if n > 0:
+            return recur_factorial(n-1, acc*n) # Automatic tail call optimization
+    else:
+        raise TypeError("nope")
+
+def equiv(n):
+    ...
+    try:
+        x `isinstance` int = n # Attempts to assign n to x which has been declared to be an int, which fails if n is not an int. int() equivalent.
+    except MatchError:
+        pass
+    else: if x > 0:
+        return ...
+
+to_binary = int$(?,2)
+
+def high_factorial(0) = 1
+addpattern def high_factorial(int() as n if n > 0) =
+    range(1, n+1) |> reduce$(*)
+
+3 |> recur_factorial |> print
+3 |> high_factorial |> print

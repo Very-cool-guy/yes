@@ -1,4 +1,4 @@
-(ns clojure-noob.work)
+(ns work)
 
 (str "a" 1 :aa)
 (list "a" 1 2 3 :l)
