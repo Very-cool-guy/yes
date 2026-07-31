@@ -1,0 +1,15 @@
+def quick_sort([]) = []
+addpattern def quick_sort([head] + tail) =
+    quick_sort(left) + [head] + quick_sort(right) where:
+        left = [x for x in tail if x < head]
+        right = [x for x in tail if x >= head]
+
+def iter_sort(l):
+    match [head] :: tail in l:
+        tail = reiterable(tail)
+        yield from quick_sort(left) :: [head] :: quick_sort(right) where:
+            left = (x for x in tail if x < head)
+            right = (x for x in tail if x >= head)
+
+[0,1,2,3,4] |> quick_sort |> print
+[0,1,2,3,4] |> iter |> iter_sort |> print
