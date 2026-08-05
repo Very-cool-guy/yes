@@ -28,3 +28,6 @@ rustyay/hi/hi_world
 **/.DS_Store
 
 coconut_yay/__coconut_cache__/
+
+lean/learn/*
+!lean/learn/Learn/
