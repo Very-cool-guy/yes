@@ -1,3 +1,7 @@
+**/__pycache__/
+**/__coconut_cache__/
+**/*.beam
+
 ast/Calc/
 ast/calculator
 ast/*.hi
@@ -7,7 +11,6 @@ gutspamyay/texts/
 gutspamyay/gutfrench.py
 
 hello_world/.*
-hello_world/src/hello_world/__pycache__/
 hello_world/src/hello_world.egg-info/
 
 lisp/cloj/clojure-noob/.*
@@ -24,10 +27,6 @@ texts/
 rustyay/**/Cargo.lock
 rustyay/**/target/
 rustyay/hi/hi_world
-
-**/.DS_Store
-
-coconut_yay/__coconut_cache__/
 
 lean/learn/*
 !lean/learn/Learn/

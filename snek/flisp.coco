@@ -1,0 +1,13 @@
+s = (f, *args) => f(*args)
+lisp_eval = => _ |> .replace("(", "s(") |> .split() |> ','.join |> eval
+
+assign = (a, b) => f"global {a}; {a} = {b}" |> exec
+do = (*args) => args[-1]
+
+sexp = """
+(do
+  (assign \"x\" 1)
+  (print x)
+  x)
+"""
+sexp |> lisp_eval |> print
