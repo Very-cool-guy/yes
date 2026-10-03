@@ -1,6 +1,11 @@
 import sys
 from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton, QLabel, QLineEdit, QVBoxLayout, QWidget
 
+class Button(QPushButton):
+    def mousePressEvent(self, e):
+        super().mousePressEvent(e)
+        e.ignore()
+
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -9,7 +14,7 @@ class MainWindow(QMainWindow):
         
         self.setWindowTitle("meow")
         
-        self.button = QPushButton(str(self.counter))
+        self.button = Button(str(self.counter))
         self.button.setCheckable(True)
         self.button.clicked.connect(self.meow)
 
@@ -30,6 +35,9 @@ class MainWindow(QMainWindow):
     def meow(self):
         self.counter += 1
         self.button.setText(str(self.counter))
+
+    def mousePressEvent(self, a0):
+        self.label.setText(f"moussssss,{a0.position()}")
 
 app = QApplication(sys.argv)
 

@@ -1,4 +1,3 @@
-**/__pycache__/
 **/__coconut_cache__/
 **/*.beam
 
@@ -11,7 +10,6 @@ gutspamyay/texts/
 gutspamyay/gutfrench.py
 
 hello_world/.*
-hello_world/src/hello_world.egg-info/
 
 lisp/cloj/clojure-noob/.*
 lisp/cloj/clojure-noob/doc/
@@ -30,3 +28,8 @@ rustyay/hi/hi_world
 
 lean/learn/*
 !lean/learn/Learn/
+
+snek/cutie/README.md
+snek/cutie/pyproject.toml
+snek/cutie/src/cutie/__init__.py
+snek/cutie/uv.lock
