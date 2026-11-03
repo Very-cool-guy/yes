@@ -20,8 +20,6 @@ lisp/cloj/clojure-noob/LICENSE
 lisp/cloj/clojure-noob/project.clj
 lisp/cloj/clojure-noob/*.md
 
-texts/
-
 rustyay/**/Cargo.lock
 rustyay/**/target/
 rustyay/hi/hi_world
